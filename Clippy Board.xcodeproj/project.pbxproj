@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F3E237FD2B8F9B67007FDE0A /* Clippy Launcher App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */; };
-		F3E237FF2B8F9B67007FDE0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E237FE2B8F9B67007FDE0A /* ContentView.swift */; };
+		F3E237FF2B8F9B67007FDE0A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E237FE2B8F9B67007FDE0A /* Content View.swift */; };
 		F3E238012B8F9B68007FDE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E238002B8F9B68007FDE0A /* Assets.xcassets */; };
 		F3E2380C2B8F9BCF007FDE0A /* Clippy Launcher.app in Resources */ = {isa = PBXBuildFile; fileRef = F3E237FA2B8F9B67007FDE0A /* Clippy Launcher.app */; };
 		F3E238122B8F9C1B007FDE0A /* Clippy Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3E237FA2B8F9B67007FDE0A /* Clippy Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		F3E237FA2B8F9B67007FDE0A /* Clippy Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Launcher App.swift"; sourceTree = "<group>"; };
-		F3E237FE2B8F9B67007FDE0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3E237FE2B8F9B67007FDE0A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
 		F3E238002B8F9B68007FDE0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E238052B8F9B68007FDE0A /* Clippy_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clippy_Launcher.entitlements; sourceTree = "<group>"; };
 		F3E2380B2B8F9BB8007FDE0A /* Clippy-Launcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Clippy-Launcher-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -90,7 +90,7 @@
 			children = (
 				F3E2380B2B8F9BB8007FDE0A /* Clippy-Launcher-Info.plist */,
 				F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */,
-				F3E237FE2B8F9B67007FDE0A /* ContentView.swift */,
+				F3E237FE2B8F9B67007FDE0A /* Content View.swift */,
 				F3E238002B8F9B68007FDE0A /* Assets.xcassets */,
 				F3E238052B8F9B68007FDE0A /* Clippy_Launcher.entitlements */,
 			);
@@ -274,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E237FF2B8F9B67007FDE0A /* ContentView.swift in Sources */,
+				F3E237FF2B8F9B67007FDE0A /* Content View.swift in Sources */,
 				F3E237FD2B8F9B67007FDE0A /* Clippy Launcher App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
