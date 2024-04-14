@@ -5,8 +5,8 @@ struct MenuBarExtraView: View {
     @StateObject private var exporter = TextFileExporter()
     @EnvironmentObject private var settings: SettingsStorage
     @Environment(PasteboardVM.self) private var pasteboardObserver
-    @Environment(\.openWindow) var openWindow
-    @Environment(\.dismissWindow) var dismissWindow
+    @Environment(\.openWindow) private var openWindow
+    @Environment(\.dismissWindow) private var dismissWindow
     
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [PasteboardItem]
@@ -113,12 +113,14 @@ final class TextFileExporter: ObservableObject {
     
     private func setupSavePanel() {
         panel.allowedContentTypes = [.text]
-        panel.directoryURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
         panel.nameFieldStringValue = "ExportedFile.txt"
+        panel.directoryURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
     }
     
     private func writeToFile(_ array: [String], url: URL?) {
-        guard let url else { return }
+        guard let url else {
+            return
+        }
         
         let text = array.joined(separator: "\n")
         
