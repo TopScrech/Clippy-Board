@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -90,9 +90,9 @@
 			children = (
 				F3E2380B2B8F9BB8007FDE0A /* Clippy-Launcher-Info.plist */,
 				F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */,
-				F3E237FE2B8F9B67007FDE0A /* Content View.swift */,
 				F3E238002B8F9B68007FDE0A /* Assets.xcassets */,
 				F3E238052B8F9B68007FDE0A /* Clippy_Launcher.entitlements */,
+				F3E237FE2B8F9B67007FDE0A /* Content View.swift */,
 			);
 			path = "Clippy Launcher";
 			sourceTree = "<group>";
@@ -120,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
+				F3F241E52B8DE596009079CB /* Assets.xcassets */,
+				F3F241EA2B8DE596009079CB /* Clippy_Board.entitlements */,
 				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
 				F3F242022B8DE64D009079CB /* Navigation */,
 				F3F241FE2B8DE64D009079CB /* Menu Bar Extra */,
@@ -128,8 +130,6 @@
 				F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */,
 				F3F242062B8DE64D009079CB /* Debug View.swift */,
 				F3F242052B8DE64D009079CB /* Text File.swift */,
-				F3F241E52B8DE596009079CB /* Assets.xcassets */,
-				F3F241EA2B8DE596009079CB /* Clippy_Board.entitlements */,
 			);
 			path = "Clippy Board";
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 				};
 			};
 			buildConfigurationList = F3F241D72B8DE596009079CB /* Build configuration list for PBXProject "Clippy Board" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
