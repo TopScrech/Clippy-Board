@@ -33,6 +33,7 @@ import ServiceManagement
 @main
 struct MyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var settings = SettingsStorage()
     
     private var pasteboardObserver = PasteboardVM()
     
@@ -47,8 +48,6 @@ struct MyApp: App {
             fatalError("Failed to create model container")
         }
     }
-    
-    @StateObject private var settings = SettingsStorage()
     
     var body: some Scene {
         MenuBarExtra("Test", systemImage: "hammer") {
