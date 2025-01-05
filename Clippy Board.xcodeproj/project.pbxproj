@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33A919D2D2AF6310084C39B /* Clippy Launcher Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33A919C2D2AF6310084C39B /* Clippy Launcher Info.plist */; };
 		F3E237FD2B8F9B67007FDE0A /* Clippy Launcher App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */; };
 		F3E237FF2B8F9B67007FDE0A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E237FE2B8F9B67007FDE0A /* Content View.swift */; };
 		F3E238012B8F9B68007FDE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E238002B8F9B68007FDE0A /* Assets.xcassets */; };
@@ -42,12 +43,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F33A919C2D2AF6310084C39B /* Clippy Launcher Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clippy Launcher Info.plist"; sourceTree = "<group>"; };
 		F3E237FA2B8F9B67007FDE0A /* Clippy Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Launcher App.swift"; sourceTree = "<group>"; };
 		F3E237FE2B8F9B67007FDE0A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
 		F3E238002B8F9B68007FDE0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E238052B8F9B68007FDE0A /* Clippy Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Clippy Launcher.entitlements"; sourceTree = "<group>"; };
-		F3E2380B2B8F9BB8007FDE0A /* Clippy Launcher Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clippy Launcher Info.plist"; sourceTree = SOURCE_ROOT; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
 		F3F241E52B8DE596009079CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E237FC2B8F9B67007FDE0A /* Clippy Launcher App.swift */,
-				F3E2380B2B8F9BB8007FDE0A /* Clippy Launcher Info.plist */,
+				F33A919C2D2AF6310084C39B /* Clippy Launcher Info.plist */,
 				F3E238052B8F9B68007FDE0A /* Clippy Launcher.entitlements */,
 				F3E238002B8F9B68007FDE0A /* Assets.xcassets */,
 				F3E237FE2B8F9B67007FDE0A /* Content View.swift */,
@@ -120,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
-				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
+				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
 				F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */,
 				F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */,
@@ -255,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E238012B8F9B68007FDE0A /* Assets.xcassets in Resources */,
+				F33A919D2D2AF6310084C39B /* Clippy Launcher Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +316,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Clippy Launcher Info.plist";
+				INFOPLIST_FILE = "Clippy Launcher/Clippy Launcher Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
@@ -346,7 +348,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Clippy Launcher Info.plist";
+				INFOPLIST_FILE = "Clippy Launcher/Clippy Launcher Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
