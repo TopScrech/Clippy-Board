@@ -6,8 +6,7 @@ import ServiceManagement
 struct MyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var settings = SettingsStorage()
-    
-    private var pasteboardObserver = PasteboardVM()
+    private var boardObserver = PasteboardVM()
     
     private let container: ModelContainer
     
@@ -26,14 +25,14 @@ struct MyApp: App {
             MenuBarExtraView()
                 .modelContainer(container)
                 .environmentObject(settings)
-                .environment(pasteboardObserver)
+                .environment(boardObserver)
         }
         .menuBarExtraStyle(.window)
         
         WindowGroup("Pasteboard", id: "pasteboard") {
             PasteboardList()
                 .modelContainer(container)
-                .environment(pasteboardObserver)
+                .environment(boardObserver)
                 .environmentObject(settings)
                 .task {
                     do {
