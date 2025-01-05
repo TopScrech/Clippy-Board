@@ -1,6 +1,6 @@
 import SwiftUI
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AutoLaunchAppDelegate: NSObject, NSApplicationDelegate {
     var pasteboardObserver: PasteboardVM!
     
     func applicationDidFinishLaunching(_ notification: Notification) {

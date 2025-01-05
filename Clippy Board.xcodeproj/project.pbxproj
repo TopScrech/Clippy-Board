@@ -17,7 +17,7 @@
 		F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F241F12B8DE610009079CB /* ScrechKit */; };
 		F3F241F52B8DE628009079CB /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F241F42B8DE628009079CB /* ServiceManagement.framework */; };
 		F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */; };
-		F3F242082B8DE64D009079CB /* App Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241F82B8DE64D009079CB /* App Delegate.swift */; };
+		F3F242082B8DE64D009079CB /* Auto LaunchApp Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241F82B8DE64D009079CB /* Auto LaunchApp Delegate.swift */; };
 		F3F242092B8DE64D009079CB /* Pasteboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241F92B8DE64D009079CB /* Pasteboard List.swift */; };
 		F3F2420B2B8DE64D009079CB /* Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */; };
 		F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */; };
@@ -54,7 +54,7 @@
 		F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Clippy Board.entitlements"; sourceTree = "<group>"; };
 		F3F241F42B8DE628009079CB /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard VM.swift"; sourceTree = "<group>"; };
-		F3F241F82B8DE64D009079CB /* App Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Delegate.swift"; sourceTree = "<group>"; };
+		F3F241F82B8DE64D009079CB /* Auto LaunchApp Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Auto LaunchApp Delegate.swift"; sourceTree = "<group>"; };
 		F3F241F92B8DE64D009079CB /* Pasteboard List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard List.swift"; sourceTree = "<group>"; };
 		F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Card.swift"; sourceTree = "<group>"; };
 		F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Item.swift"; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
+				F3F241F82B8DE64D009079CB /* Auto LaunchApp Delegate.swift */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
@@ -146,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
-				F3F241F82B8DE64D009079CB /* App Delegate.swift */,
 				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
 			);
 			path = Pasteboard;
@@ -286,7 +286,7 @@
 				F3F242112B8DE64D009079CB /* App Container.swift in Sources */,
 				F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */,
 				F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */,
-				F3F242082B8DE64D009079CB /* App Delegate.swift in Sources */,
+				F3F242082B8DE64D009079CB /* Auto LaunchApp Delegate.swift in Sources */,
 				F3F242142B8DE64D009079CB /* Debug View.swift in Sources */,
 				F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */,
 				F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */,
