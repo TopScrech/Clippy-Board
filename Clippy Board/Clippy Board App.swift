@@ -34,13 +34,6 @@ struct MyApp: App {
                 .modelContainer(container)
                 .environment(boardObserver)
                 .environmentObject(settings)
-                .task {
-                    do {
-                        try SMAppService.mainApp.register()
-                    } catch {
-                        print("Fuf")
-                    }
-                }
         }
     }
 }
