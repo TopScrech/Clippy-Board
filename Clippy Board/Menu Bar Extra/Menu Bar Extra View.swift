@@ -50,10 +50,10 @@ struct MenuBarExtraView: View {
             
             Picker("Detection speed", selection: $settings.detectionSpeed) {
                 Text("Slow")
-                    .tag(5.0)
+                    .tag(5)
                 
                 Text("Fast")
-                    .tag(1.0)
+                    .tag(1)
                 
                 Text("Very fast")
                     .tag(0.1)

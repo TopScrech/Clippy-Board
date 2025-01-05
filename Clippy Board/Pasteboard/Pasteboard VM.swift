@@ -18,11 +18,6 @@ final class PasteboardVM {
             } ?? []
             
             if !currentItems.isEmpty {
-                guard let bundleID = Bundle.main.bundleIdentifier else {
-                    return
-                }
-                
-                print(bundleID)
                 lastCopiedItem = currentItems
             }
         }
