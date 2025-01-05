@@ -4,7 +4,6 @@ import ServiceManagement
 
 @main
 struct MyApp: App {
-    @NSApplicationDelegateAdaptor(AutoLaunchAppDelegate.self) var appDelegate
     @StateObject private var settings = SettingsStorage()
     private var boardObserver = PasteboardVM()
     
