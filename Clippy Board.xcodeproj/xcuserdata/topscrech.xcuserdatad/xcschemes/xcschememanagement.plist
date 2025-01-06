@@ -9,10 +9,13 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Clippy Launcher.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F3F241DB2B8DE596009079CB</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F358F0172D2B4E0D00BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0162D2B4E0D00BCC07B /* LaunchAtLogin */; };
+		F358F0192D2B4E4F00BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0182D2B4E4F00BCC07B /* Settings View.swift */; };
 		F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241DF2B8DE596009079CB /* Clippy Board App.swift */; };
 		F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F241E52B8DE596009079CB /* Assets.xcassets */; };
 		F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F241F12B8DE610009079CB /* ScrechKit */; };
@@ -35,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F358F0182D2B4E4F00BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
+		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
 		F3F241E52B8DE596009079CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F358F0172D2B4E0D00BCC07B /* LaunchAtLogin in Frameworks */,
 				F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */,
 				F3F241F52B8DE628009079CB /* ServiceManagement.framework in Frameworks */,
 			);
@@ -64,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F358F01A2D2B4E5600BCC07B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F358F0182D2B4E4F00BCC07B /* Settings View.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		F3F241D32B8DE596009079CB = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,7 @@
 		F3F241DE2B8DE596009079CB /* Clippy Board */ = {
 			isa = PBXGroup;
 			children = (
+				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
@@ -95,6 +109,7 @@
 				F3F242022B8DE64D009079CB /* Navigation */,
 				F3F241FE2B8DE64D009079CB /* Menu Bar Extra */,
 				F3F241F62B8DE64D009079CB /* Pasteboard */,
+				F358F01A2D2B4E5600BCC07B /* Settings */,
 			);
 			path = "Clippy Board";
 			sourceTree = "<group>";
@@ -151,6 +166,7 @@
 			name = "Clippy Board";
 			packageProductDependencies = (
 				F3F241F12B8DE610009079CB /* ScrechKit */,
+				F358F0162D2B4E0D00BCC07B /* LaunchAtLogin */,
 			);
 			productName = "Clippy Board";
 			productReference = F3F241DC2B8DE596009079CB /* Clippy Board.app */;
@@ -181,6 +197,7 @@
 			mainGroup = F3F241D32B8DE596009079CB;
 			packageReferences = (
 				F3F241F02B8DE610009079CB /* XCRemoteSwiftPackageReference "ScrechKit" */,
+				F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F3F241DD2B8DE596009079CB /* Products */;
@@ -218,6 +235,7 @@
 				F3F242092B8DE64D009079CB /* Pasteboard List.swift in Sources */,
 				F3F2420B2B8DE64D009079CB /* Pasteboard Card.swift in Sources */,
 				F3F242132B8DE64D009079CB /* Text File.swift in Sources */,
+				F358F0192D2B4E4F00BCC07B /* Settings View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +377,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -390,6 +409,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -430,6 +450,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F3F241F02B8DE610009079CB /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
@@ -441,6 +469,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F358F0162D2B4E0D00BCC07B /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
 		F3F241F12B8DE610009079CB /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F3F241F02B8DE610009079CB /* XCRemoteSwiftPackageReference "ScrechKit" */;
