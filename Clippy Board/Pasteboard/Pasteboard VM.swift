@@ -4,26 +4,25 @@ import SwiftData
 @Observable
 final class PasteboardVM {
     private var timer: Timer?
-    private let pasteboard = NSPasteboard.general
-    var lastCopiedItem: [String] = []
+    var copiedItem: [String] = []
     
     init() {
-        timer = Timer.scheduledTimer(withTimeInterval: SettingsStorage().detectionSpeed, repeats: true) { [weak self] _ in
-            guard let self else {
-                return
-            }
-            
-            let currentItems = self.pasteboard.pasteboardItems?.compactMap {
-                $0.string(forType: .string)
-            } ?? []
-            
-            if !currentItems.isEmpty {
-                lastCopiedItem = currentItems
-            }
+        timer = Timer.scheduledTimer(withTimeInterval: SettingsStorage().detectionSpeed, repeats: true) { _ in
+            self.checkCopyboard()
         }
     }
     
     deinit {
         timer?.invalidate()
+    }
+    
+    private func checkCopyboard() {
+        let currentItems = NSPasteboard.general.pasteboardItems?.compactMap {
+            $0.string(forType: .string)
+        } ?? []
+        
+        if !currentItems.isEmpty {
+            copiedItem = currentItems
+        }
     }
 }

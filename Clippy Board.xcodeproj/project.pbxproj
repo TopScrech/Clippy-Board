@@ -99,9 +99,9 @@
 			children = (
 				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
+				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
-				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
 				F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */,
 				F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */,
 				F3F242062B8DE64D009079CB /* Debug View.swift */,

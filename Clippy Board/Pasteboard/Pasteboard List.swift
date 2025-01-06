@@ -29,7 +29,7 @@ struct PasteboardList: View {
             //                }
             //            }
         }
-        .onChange(of: pasteboardObserver.lastCopiedItem) { _, newValue in
+        .onChange(of: pasteboardObserver.copiedItem) { _, newValue in
             if items.last?.content != newValue.first {
                 appendNewItems(newValue)
             }
