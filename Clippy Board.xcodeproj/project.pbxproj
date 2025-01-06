@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F358F0182D2B4E4F00BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
-		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard_Card.swift; sourceTree = "<group>"; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 		F3F241DE2B8DE596009079CB /* Clippy Board */ = {
 			isa = PBXGroup;
 			children = (
-				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
 				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
 				F3F242022B8DE64D009079CB /* Nav */,
+				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
