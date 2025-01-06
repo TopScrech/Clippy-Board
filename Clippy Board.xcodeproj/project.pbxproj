@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F358F0182D2B4E4F00BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
+		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
 		F3F241E52B8DE596009079CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		F3F241DE2B8DE596009079CB /* Clippy Board */ = {
 			isa = PBXGroup;
 			children = (
+				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
@@ -375,6 +377,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -406,6 +409,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
