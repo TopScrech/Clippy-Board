@@ -10,7 +10,7 @@ struct PasteboardList: View {
     var body: some View {
         List {
             ForEach(items.reversed()) { item in
-                Pasteboard_Card(item)
+                PasteboardCard(item)
             }
         }
         .onChange(of: pasteboardObserver.copiedItems) { _, newValue in

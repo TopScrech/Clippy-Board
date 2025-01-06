@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F358F0172D2B4E0D00BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0162D2B4E0D00BCC07B /* LaunchAtLogin */; };
 		F358F0192D2B4E4F00BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0182D2B4E4F00BCC07B /* Settings View.swift */; };
-		F358F01D2D2B56B300BCC07B /* Pasteboard_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */; };
+		F358F01D2D2B56B300BCC07B /* Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */; };
 		F358F0412D2C289F00BCC07B /* Text File Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0402D2C289F00BCC07B /* Text File Exporter.swift */; };
 		F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241DF2B8DE596009079CB /* Clippy Board App.swift */; };
 		F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F241E52B8DE596009079CB /* Assets.xcassets */; };
@@ -17,7 +17,7 @@
 		F3F241F52B8DE628009079CB /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F241F42B8DE628009079CB /* ServiceManagement.framework */; };
 		F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */; };
 		F3F242092B8DE64D009079CB /* Pasteboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241F92B8DE64D009079CB /* Pasteboard List.swift */; };
-		F3F2420B2B8DE64D009079CB /* Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */; };
+		F3F2420B2B8DE64D009079CB /* Menu Bar Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FB2B8DE64D009079CB /* Menu Bar Pasteboard Card.swift */; };
 		F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */; };
 		F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FF2B8DE64D009079CB /* Menu Bar Extra View.swift */; };
 		F3F242112B8DE64D009079CB /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242032B8DE64D009079CB /* App Container.swift */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		F358F0182D2B4E4F00BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
-		F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard_Card.swift; sourceTree = "<group>"; };
+		F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pasteboard Card.swift"; sourceTree = "<group>"; };
 		F358F0402D2C289F00BCC07B /* Text File Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text File Exporter.swift"; sourceTree = "<group>"; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		F3F241F42B8DE628009079CB /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard VM.swift"; sourceTree = "<group>"; };
 		F3F241F92B8DE64D009079CB /* Pasteboard List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard List.swift"; sourceTree = "<group>"; };
-		F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Card.swift"; sourceTree = "<group>"; };
+		F3F241FB2B8DE64D009079CB /* Menu Bar Pasteboard Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Pasteboard Card.swift"; sourceTree = "<group>"; };
 		F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Item.swift"; sourceTree = "<group>"; };
 		F3F241FF2B8DE64D009079CB /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; };
 		F3F242032B8DE64D009079CB /* App Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
@@ -116,8 +116,7 @@
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
 				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
-				F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */,
-				F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */,
+				F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */,
 				F358F0202D2BDC7700BCC07B /* Models */,
 				F3F241FE2B8DE64D009079CB /* Menu Bar Extra */,
 				F358F01A2D2B4E5600BCC07B /* Settings */,
@@ -137,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F241FF2B8DE64D009079CB /* Menu Bar Extra View.swift */,
+				F3F241FB2B8DE64D009079CB /* Menu Bar Pasteboard Card.swift */,
 				F358F0402D2C289F00BCC07B /* Text File Exporter.swift */,
 			);
 			path = "Menu Bar Extra";
@@ -231,12 +231,12 @@
 				F3F242112B8DE64D009079CB /* App Container.swift in Sources */,
 				F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */,
 				F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */,
-				F358F01D2D2B56B300BCC07B /* Pasteboard_Card.swift in Sources */,
+				F358F01D2D2B56B300BCC07B /* Pasteboard Card.swift in Sources */,
 				F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */,
 				F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */,
 				F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */,
 				F3F242092B8DE64D009079CB /* Pasteboard List.swift in Sources */,
-				F3F2420B2B8DE64D009079CB /* Pasteboard Card.swift in Sources */,
+				F3F2420B2B8DE64D009079CB /* Menu Bar Pasteboard Card.swift in Sources */,
 				F3F242132B8DE64D009079CB /* Text File.swift in Sources */,
 				F358F0192D2B4E4F00BCC07B /* Settings View.swift in Sources */,
 				F358F0412D2C289F00BCC07B /* Text File Exporter.swift in Sources */,

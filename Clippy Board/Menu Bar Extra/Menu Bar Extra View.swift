@@ -34,7 +34,7 @@ struct MenuBarExtraView: View {
                     ContentUnavailableView.search(text: search)
                 } else {
                     ForEach(founditems.reversed()) { item in
-                        PasteboardCard(item)
+                        MenuBarPasteboardCard(item)
                     }
                 }
             }
