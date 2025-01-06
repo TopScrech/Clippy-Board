@@ -197,7 +197,7 @@
 			mainGroup = F3F241D32B8DE596009079CB;
 			packageReferences = (
 				F3F241F02B8DE610009079CB /* XCRemoteSwiftPackageReference "ScrechKit" */,
-				F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F3F241DD2B8DE596009079CB /* Products */;
@@ -450,9 +450,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+		F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			repositoryURL = "https://github.com/TopScrech/LaunchAtLogin";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -471,7 +471,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		F358F0162D2B4E0D00BCC07B /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			package = F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
 		};
 		F3F241F12B8DE610009079CB /* ScrechKit */ = {
