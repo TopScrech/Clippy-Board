@@ -22,7 +22,6 @@
 		F3F242112B8DE64D009079CB /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242032B8DE64D009079CB /* App Container.swift */; };
 		F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242042B8DE64D009079CB /* Settings Storage.swift */; };
 		F3F242132B8DE64D009079CB /* Text File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242052B8DE64D009079CB /* Text File.swift */; };
-		F3F242142B8DE64D009079CB /* Debug View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242062B8DE64D009079CB /* Debug View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,7 +53,6 @@
 		F3F242032B8DE64D009079CB /* App Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3F242042B8DE64D009079CB /* Settings Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings Storage.swift"; sourceTree = "<group>"; };
 		F3F242052B8DE64D009079CB /* Text File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text File.swift"; sourceTree = "<group>"; };
-		F3F242062B8DE64D009079CB /* Debug View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Debug View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */,
 				F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */,
-				F3F242062B8DE64D009079CB /* Debug View.swift */,
 				F3F242052B8DE64D009079CB /* Text File.swift */,
 				F3F242022B8DE64D009079CB /* Navigation */,
 				F3F241FE2B8DE64D009079CB /* Menu Bar Extra */,
@@ -232,7 +229,6 @@
 				F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */,
 				F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */,
 				F358F01D2D2B56B300BCC07B /* Pasteboard_Card.swift in Sources */,
-				F3F242142B8DE64D009079CB /* Debug View.swift in Sources */,
 				F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */,
 				F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */,
 				F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */,
