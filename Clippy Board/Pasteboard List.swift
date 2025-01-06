@@ -13,7 +13,7 @@ struct PasteboardList: View {
                 Pasteboard_Card(item)
             }
         }
-        .onChange(of: pasteboardObserver.copiedItem) { _, newValue in
+        .onChange(of: pasteboardObserver.copiedItems) { _, newValue in
             if items.last?.content != newValue.first {
                 appendNewItems(newValue)
             }

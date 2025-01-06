@@ -4,7 +4,7 @@ import SwiftData
 @main
 struct MyApp: App {
     @StateObject private var settings = SettingsStorage()
-    private var boardObserver = PasteboardVM()
+    @State private var boardObserver = PasteboardVM()
     
     private let container: ModelContainer
     

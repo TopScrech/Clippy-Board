@@ -77,6 +77,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		F358F0202D2BDC7700BCC07B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3F242052B8DE64D009079CB /* Text File.swift */,
+				F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F3F241D32B8DE596009079CB = {
 			isa = PBXGroup;
 			children = (
@@ -100,14 +109,15 @@
 				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
 				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
+				F3F242022B8DE64D009079CB /* Nav */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
+				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
+				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
+				F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */,
 				F3F241FB2B8DE64D009079CB /* Pasteboard Card.swift */,
-				F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */,
-				F3F242052B8DE64D009079CB /* Text File.swift */,
-				F3F242022B8DE64D009079CB /* Navigation */,
+				F358F0202D2BDC7700BCC07B /* Models */,
 				F3F241FE2B8DE64D009079CB /* Menu Bar Extra */,
-				F3F241F62B8DE64D009079CB /* Pasteboard */,
 				F358F01A2D2B4E5600BCC07B /* Settings */,
 			);
 			path = "Clippy Board";
@@ -121,16 +131,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3F241F62B8DE64D009079CB /* Pasteboard */ = {
-			isa = PBXGroup;
-			children = (
-				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
-				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
-				F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */,
-			);
-			path = Pasteboard;
-			sourceTree = "<group>";
-		};
 		F3F241FE2B8DE64D009079CB /* Menu Bar Extra */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,12 +139,12 @@
 			path = "Menu Bar Extra";
 			sourceTree = "<group>";
 		};
-		F3F242022B8DE64D009079CB /* Navigation */ = {
+		F3F242022B8DE64D009079CB /* Nav */ = {
 			isa = PBXGroup;
 			children = (
 				F3F242032B8DE64D009079CB /* App Container.swift */,
 			);
-			path = Navigation;
+			path = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
