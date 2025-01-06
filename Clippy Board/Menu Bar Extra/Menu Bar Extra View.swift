@@ -2,7 +2,7 @@ import ScrechKit
 import SwiftData
 
 struct MenuBarExtraView: View {
-    @StateObject private var exporter = TextFileExporter()
+    private var exporter = TextFileExporter()
     @EnvironmentObject private var settings: SettingsStorage
     @Environment(PasteboardVM.self) private var pasteboardObserver
     @Environment(\.openWindow) private var openWindow
@@ -94,40 +94,6 @@ struct MenuBarExtraView: View {
     private func clearAll() {
         for item in items {
             modelContext.delete(item)
-        }
-    }
-}
-
-final class TextFileExporter: ObservableObject {
-    private let panel = NSSavePanel()
-    
-    func exportToFile(_ array: [String]) {
-        main {
-            self.setupSavePanel()
-            
-            if self.panel.runModal() == .OK {
-                self.writeToFile(array, url: self.panel.url)
-            }
-        }
-    }
-    
-    private func setupSavePanel() {
-        panel.allowedContentTypes = [.text]
-        panel.nameFieldStringValue = "ExportedFile.txt"
-        panel.directoryURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
-    }
-    
-    private func writeToFile(_ array: [String], url: URL?) {
-        guard let url else {
-            return
-        }
-        
-        let text = array.joined(separator: "\n")
-        
-        do {
-            try text.write(to: url, atomically: true, encoding: .utf8)
-        } catch {
-            print("Failed to write to file: \(error)")
         }
     }
 }

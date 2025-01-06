@@ -19,14 +19,13 @@ struct MyApp: App {
     }
     
     var body: some Scene {
-#warning("MenuBarExtra")
-        //        MenuBarExtra("Test", systemImage: "hammer") {
-        //            MenuBarExtraView()
-        //                .modelContainer(container)
-        //                .environmentObject(settings)
-        //                .environment(boardObserver)
-        //        }
-        //        .menuBarExtraStyle(.window)
+        MenuBarExtra("Test", systemImage: "hammer") {
+            MenuBarExtraView()
+                .modelContainer(container)
+                .environment(boardObserver)
+                .environmentObject(settings)
+        }
+        .menuBarExtraStyle(.window)
         
         WindowGroup("Pasteboard", id: "pasteboard") {
             PasteboardList()
