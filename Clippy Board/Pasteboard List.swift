@@ -9,7 +9,7 @@ struct PasteboardList: View {
     
     var body: some View {
         List {
-            ForEach(items.reversed()) { item in
+            ForEach(items) { item in
                 PasteboardCard(item)
             }
         }
