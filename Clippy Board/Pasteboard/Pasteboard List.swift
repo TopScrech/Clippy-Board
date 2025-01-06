@@ -10,24 +10,8 @@ struct PasteboardList: View {
     var body: some View {
         List {
             ForEach(items.reversed()) { item in
-                Button {
-                    NSPasteboard.general.clearContents()
-                    NSPasteboard.general.setString(item.content, forType: .string)
-                } label: {
-                    Text(item.content)
-                        .lineLimit(1)
-                }
-                .buttonStyle(.plain)
+                Pasteboard_Card(item)
             }
-            
-            //            Section {
-            //                Button {
-            //            NSPasteboard.general.clearContents()
-            //                    NSPasteboard.general.setString("qefewfew", forType: .string)
-            //                } label: {
-            //                    Text("Clear")
-            //                }
-            //            }
         }
         .onChange(of: pasteboardObserver.copiedItem) { _, newValue in
             if items.last?.content != newValue.first {

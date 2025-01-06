@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F358F0172D2B4E0D00BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0162D2B4E0D00BCC07B /* LaunchAtLogin */; };
 		F358F0192D2B4E4F00BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0182D2B4E4F00BCC07B /* Settings View.swift */; };
+		F358F01D2D2B56B300BCC07B /* Pasteboard_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */; };
 		F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241DF2B8DE596009079CB /* Clippy Board App.swift */; };
 		F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F241E52B8DE596009079CB /* Assets.xcassets */; };
 		F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F241F12B8DE610009079CB /* ScrechKit */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		F358F0182D2B4E4F00BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
 		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard_Card.swift; sourceTree = "<group>"; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
 		F3F241E52B8DE596009079CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
 				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
+				F358F01C2D2B56B300BCC07B /* Pasteboard_Card.swift */,
 			);
 			path = Pasteboard;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				F3F242112B8DE64D009079CB /* App Container.swift in Sources */,
 				F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */,
 				F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */,
+				F358F01D2D2B56B300BCC07B /* Pasteboard_Card.swift in Sources */,
 				F3F242142B8DE64D009079CB /* Debug View.swift in Sources */,
 				F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */,
 				F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */,
