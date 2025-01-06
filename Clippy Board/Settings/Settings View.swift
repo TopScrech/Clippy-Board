@@ -1,16 +1,24 @@
 import SwiftUI
+import SwiftData
 import LaunchAtLogin
 import ServiceManagement
 
 struct SettingsView: View {
+    //    private var exporter = TextFileExporter()
+    @Query private var items: [PasteboardItem]
+    
     var body: some View {
         VStack {
-            LaunchAtLogin.Toggle {
-                Text(LaunchAtLogin.isEnabled ? "Launch at login 🦄" : "Disable launch at login")
-                
 #warning("Show status")
-                //                Text(serviceManagementStatus())
-            }
+            LaunchAtLogin.Toggle()
+            
+            //            Button("Export") {
+            //                let array = items.map {
+            //                    $0.content
+            //                }
+            //
+            //                exporter.exportToFile(array)
+            //            }
         }
         .padding()
     }

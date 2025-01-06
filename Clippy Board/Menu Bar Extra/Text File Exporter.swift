@@ -2,9 +2,9 @@ import ScrechKit
 
 @Observable
 final class TextFileExporter {
-    
     func exportToFile(_ array: [String]) {
         main {
+#warning("Crashes")
             let panel = NSSavePanel()
             
             panel.allowedContentTypes = [.text]

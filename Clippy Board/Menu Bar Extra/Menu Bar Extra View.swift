@@ -2,7 +2,6 @@ import ScrechKit
 import SwiftData
 
 struct MenuBarExtraView: View {
-    private var exporter = TextFileExporter()
     @EnvironmentObject private var settings: SettingsStorage
     @Environment(PasteboardVM.self) private var pasteboardObserver
     @Environment(\.openWindow) private var openWindow
@@ -40,6 +39,7 @@ struct MenuBarExtraView: View {
                 }
             }
             .scrollIndicators(.never)
+            .frame(minHeight: 200)
             //            .overlay {
             //                if founditems.isEmpty {
             //                    ContentUnavailableView.search(text: search)
@@ -64,27 +64,19 @@ struct MenuBarExtraView: View {
                 Button("Clear All") {
                     clearAll()
                 }
-                
-                Button("Export") {
-                    let array = items.map {
-                        $0.content
-                    }
-                    
-                    exporter.exportToFile(array)
-                }
-                
+                                
                 Button("Quit", role: .destructive) {
                     NSApplication.shared.terminate(nil)
                 }
             }
             
             HStack {
-                Button("Open window") {
-                    openWindow(id: "pasteboard")
-                }
-                
                 Button("Dismiss window") {
                     dismissWindow(id: "pasteboard")
+                }
+                
+                Button("Open window") {
+                    openWindow(id: "pasteboard")
                 }
             }
             .padding(.bottom)
