@@ -10,12 +10,14 @@ struct PasteboardList: View {
     var body: some View {
         List {
             Section {
-                Button("Clear All") {
-                    clearAll()
-                }
-                
-                Button("Print All") {
-                    printAll()
+                HStack {
+                    Button("Clear All") {
+                        clearAll()
+                    }
+                    
+                    Button("Print All") {
+                        printAll()
+                    }
                 }
             }
             

@@ -5,8 +5,8 @@ import SwiftData
 struct MyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
+    @State private var vm = PasteboardVM()
     @StateObject private var settings = SettingsStorage()
-    @State private var boardObserver = PasteboardVM()
     
     private let container: ModelContainer
     
@@ -23,16 +23,16 @@ struct MyApp: App {
     var body: some Scene {
         MenuBarExtra("Test", systemImage: "hammer") {
             MenuBarExtraView()
+                .environment(vm)
                 .modelContainer(container)
-                .environment(boardObserver)
                 .environmentObject(settings)
         }
         .menuBarExtraStyle(.window)
         
         WindowGroup("Pasteboard", id: "pasteboard") {
             PasteboardList()
+                .environment(vm)
                 .modelContainer(container)
-                .environment(boardObserver)
                 .environmentObject(settings)
         }
         
