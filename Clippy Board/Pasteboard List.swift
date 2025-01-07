@@ -29,7 +29,14 @@ struct PasteboardList: View {
                 app: vm.focusedAppName
             )
             
-            modelContext.insert(newItem)
+            guard let sameItem = items.first(where: {
+                $0.content == newItem.content
+            }) else {
+                modelContext.insert(newItem)
+                return
+            }
+            
+            sameItem.date = Date()
         }
     }
     

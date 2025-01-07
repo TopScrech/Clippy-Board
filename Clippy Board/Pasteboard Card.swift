@@ -12,8 +12,16 @@ struct PasteboardCard: View {
             NSPasteboard.general.clearContents()
             NSPasteboard.general.setString(item.content, forType: .string)
         } label: {
-            Text(item.content)
-                .lineLimit(1)
+            VStack(alignment: .leading) {
+                Text(item.content)
+                    .lineLimit(1)
+                
+                Text(item.date, format: .dateTime)
+                
+                if let app = item.app {
+                    Text(app)
+                }
+            }
         }
         .buttonStyle(.plain)
     }
