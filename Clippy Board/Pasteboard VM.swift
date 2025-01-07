@@ -14,6 +14,14 @@ final class PasteboardVM {
             name: .NSPasteboardDidChange,
             object: nil
         )
+        
+        startObservingFocusedApp()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        
+        stopObservingFocusedApp()
     }
     
     @objc
@@ -27,21 +35,18 @@ final class PasteboardVM {
         }
         
         DispatchQueue.main.async {
-            print(item)
+            guard !item.isEmpty else {
+                return
+            }
+            
+            print("Copied \(item.prefix(40))")
+            
+            if let app = self.focusedAppName {
+                print("From \(app)")
+            }
+            
             self.clipboardContent = item
         }
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    private func stopObservingFocusedApp() {
-        guard let workspaceObserver else {
-            return
-        }
-        
-        NotificationCenter.default.removeObserver(workspaceObserver)
     }
     
     private func startObservingFocusedApp() {
@@ -60,5 +65,13 @@ final class PasteboardVM {
             
             self?.focusedAppName = appName
         }
+    }
+    
+    private func stopObservingFocusedApp() {
+        guard let workspaceObserver else {
+            return
+        }
+        
+        NotificationCenter.default.removeObserver(workspaceObserver)
     }
 }

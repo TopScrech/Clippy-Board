@@ -1,10 +1,5 @@
 
 .DS_Store
 Clippy Board.xcodeproj/project.xcworkspace/xcuserdata/topscrech.xcuserdatad/UserInterfaceState.xcuserstate
-Clippy Board.xcodeproj/project.xcworkspace/xcuserdata/topscrech.xcuserdatad/UserInterfaceState.xcuserstate
-Clippy Board.xcodeproj/project.xcworkspace/xcuserdata/topscrech.xcuserdatad/UserInterfaceState.xcuserstate
-Clippy Board.xcodeproj/project.xcworkspace/xcuserdata/topscrech.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
-Clippy Board.xcodeproj/project.xcworkspace/xcuserdata/topscrech.xcuserdatad/UserInterfaceState.xcuserstate
-*.xcuserstate
-*.xcuserstate
+**/UserInterfaceState.xcuserstate
