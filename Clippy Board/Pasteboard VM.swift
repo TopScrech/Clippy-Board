@@ -3,9 +3,9 @@ import SwiftData
 
 @Observable
 final class PasteboardVM {
-    private var focusedAppName: String? = nil
+    var focusedAppName: String? = nil
     private var workspaceObserver: NSObjectProtocol?
-    var clipboardContent = ""
+    var clipboardContent: String? = nil
     
     init() {
         NotificationCenter.default.addObserver(
