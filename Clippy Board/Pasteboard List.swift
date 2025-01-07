@@ -3,7 +3,7 @@ import SwiftData
 
 struct PasteboardList: View {
     @Environment(PasteboardVM.self) private var pasteboardObserver
-    @State private var test = ClipboardObserver()
+    
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [PasteboardItem]
     
@@ -19,13 +19,13 @@ struct PasteboardList: View {
                 PasteboardCard(item)
             }
         }
-        .onChange(of: pasteboardObserver.copiedItem) { _, newValue in
-            guard let newValue else {
-                return
-            }
-            
-            print("Copied: \(newValue)")
-        }
+        //        .onChange(of: pasteboardObserver.copiedItem) { _, newValue in
+        //            guard let newValue else {
+        //                return
+        //            }
+        //
+        //            print("Copied: \(newValue)")
+        //        }
     }
     
     private func clearAll() {
