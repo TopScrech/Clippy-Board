@@ -4,7 +4,7 @@ import SwiftData
 @Model
 final class PasteboardItem {
     var content = ""
-    var date: Date = Date()
+    var date = Date()
     
     init(content: String, date: Date) {
         self.content = content
