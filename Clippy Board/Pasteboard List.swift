@@ -36,6 +36,7 @@ struct PasteboardList: View {
             }
             
             sameItem.date = Date()
+            try? modelContext.save()
         }
     }
     

@@ -18,9 +18,7 @@ struct PasteboardCard: View {
                 
                 Text(item.date, format: .dateTime)
                 
-                if let app = item.app {
-                    Text(app)
-                }
+                Text(item.app ?? "-")
             }
         }
         .buttonStyle(.plain)
