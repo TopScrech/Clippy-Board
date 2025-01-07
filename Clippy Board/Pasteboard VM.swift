@@ -4,8 +4,8 @@ import SwiftData
 @Observable
 final class PasteboardVM {
     var focusedAppName: String? = nil
+    var clipboardContent: PasteboardItem? = nil
     private var workspaceObserver: NSObjectProtocol?
-    var clipboardContent: String? = nil
     
     init() {
         NotificationCenter.default.addObserver(
@@ -43,9 +43,18 @@ final class PasteboardVM {
             
             if let app = self.focusedAppName {
                 print("From \(app)")
+                
+                self.clipboardContent = PasteboardItem(
+                    content: item,
+                    app: app
+                )
+            } else {
+                print("No app")
+                
+                self.clipboardContent = PasteboardItem(
+                    content: item
+                )
             }
-            
-            self.clipboardContent = item
         }
     }
     
@@ -54,16 +63,16 @@ final class PasteboardVM {
             forName: NSWorkspace.didActivateApplicationNotification,
             object: nil,
             queue: .main
-        ) { [weak self] notification in
+        ) { notification in
             guard
                 let app = notification.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication,
                 let appName = app.localizedName
             else {
-                self?.focusedAppName = nil
+                self.focusedAppName = nil
                 return
             }
             
-            self?.focusedAppName = appName
+            self.focusedAppName = appName
         }
     }
     
