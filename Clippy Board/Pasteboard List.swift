@@ -3,26 +3,28 @@ import SwiftData
 
 struct PasteboardList: View {
     @Environment(PasteboardVM.self) private var pasteboardObserver
-    
+    @State private var test = ClipboardObserver()
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [PasteboardItem]
     
     var body: some View {
         List {
+            Section {
+                Button("Clear All") {
+                    clearAll()
+                }
+            }
+            
             ForEach(items) { item in
                 PasteboardCard(item)
             }
         }
-        .onChange(of: pasteboardObserver.copiedItems) { _, newValue in
-            if items.last?.content != newValue.first {
-                appendNewItems(newValue)
+        .onChange(of: pasteboardObserver.copiedItem) { _, newValue in
+            guard let newValue else {
+                return
             }
-        }
-    }
-    
-    private func appendNewItems(_ newItems: [String]) {
-        for item in newItems {
-            modelContext.insert(PasteboardItem(content: item, date: Date()))
+            
+            print("Copied: \(newValue)")
         }
     }
     

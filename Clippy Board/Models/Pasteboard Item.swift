@@ -6,7 +6,7 @@ final class PasteboardItem {
     var content = ""
     var date = Date()
     
-    init(content: String, date: Date) {
+    init(content: String, date: Date = Date()) {
         self.content = content
         self.date = date
     }

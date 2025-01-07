@@ -3,6 +3,8 @@ import SwiftData
 
 @main
 struct MyApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @StateObject private var settings = SettingsStorage()
     @State private var boardObserver = PasteboardVM()
     
