@@ -12,6 +12,7 @@
 		F358F01D2D2B56B300BCC07B /* Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */; };
 		F358F0412D2C289F00BCC07B /* Text File Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0402D2C289F00BCC07B /* Text File Exporter.swift */; };
 		F39E682E2D2D42260002BA96 /* App Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E682D2D2D42260002BA96 /* App Delegate.swift */; };
+		F3EFC1792D70AAF900EE988A /* Clippy-Board-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EFC1782D70AAF900EE988A /* Clippy-Board-Info.plist */; };
 		F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241DF2B8DE596009079CB /* Clippy Board App.swift */; };
 		F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F241E52B8DE596009079CB /* Assets.xcassets */; };
 		F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F241F12B8DE610009079CB /* ScrechKit */; };
@@ -40,10 +41,10 @@
 
 /* Begin PBXFileReference section */
 		F358F0182D2B4E4F00BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
-		F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clippy-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pasteboard Card.swift"; sourceTree = "<group>"; };
 		F358F0402D2C289F00BCC07B /* Text File Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text File Exporter.swift"; sourceTree = "<group>"; };
 		F39E682D2D2D42260002BA96 /* App Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Delegate.swift"; sourceTree = "<group>"; };
+		F3EFC1782D70AAF900EE988A /* Clippy-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clippy-Board-Info.plist"; sourceTree = "<group>"; };
 		F3F241DC2B8DE596009079CB /* Clippy Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clippy Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F241DF2B8DE596009079CB /* Clippy Board App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Clippy Board App.swift"; sourceTree = "<group>"; };
 		F3F241E52B8DE596009079CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,7 +115,7 @@
 				F39E682D2D2D42260002BA96 /* App Delegate.swift */,
 				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
 				F3F242022B8DE64D009079CB /* Nav */,
-				F358F01B2D2B54F900BCC07B /* Clippy-Board-Info.plist */,
+				F3EFC1782D70AAF900EE988A /* Clippy-Board-Info.plist */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
 				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
@@ -220,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EFC1792D70AAF900EE988A /* Clippy-Board-Info.plist in Resources */,
 				F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +387,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Clippy-Board-Info.plist";
+				INFOPLIST_FILE = "Clippy Board/Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -417,7 +419,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Clippy-Board-Info.plist";
+				INFOPLIST_FILE = "Clippy Board/Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
