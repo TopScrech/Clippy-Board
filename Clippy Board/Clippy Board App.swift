@@ -21,7 +21,7 @@ struct MyApp: App {
     }
     
     var body: some Scene {
-        MenuBarExtra("Test", systemImage: "hammer") {
+        MenuBarExtra("Menu Bar Extra", systemImage: "hammer") {
             MenuBarExtraView()
                 .environment(vm)
                 .modelContainer(container)
