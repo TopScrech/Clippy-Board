@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,12 +30,10 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		F3E238112B8F9C11007FDE0A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
+			dstSubfolder = Wrapper;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -63,13 +61,11 @@
 /* Begin PBXFrameworksBuildPhase section */
 		F3F241D92B8DE596009079CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F358F0172D2B4E0D00BCC07B /* LaunchAtLogin in Frameworks */,
 				F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */,
 				F3F241F52B8DE628009079CB /* ServiceManagement.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -168,8 +164,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Clippy Board";
 			packageProductDependencies = (
 				F3F241F12B8DE610009079CB /* ScrechKit */,
@@ -206,7 +200,7 @@
 				F3F241F02B8DE610009079CB /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F358F0152D2B4E0D00BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 			);
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = F3F241DD2B8DE596009079CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,19 +213,16 @@
 /* Begin PBXResourcesBuildPhase section */
 		F3F241DA2B8DE596009079CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3EFC1792D70AAF900EE988A /* Clippy-Board-Info.plist in Resources */,
 				F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3F241D82B8DE596009079CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3F242112B8DE64D009079CB /* App Container.swift in Sources */,
 				F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */,
@@ -247,12 +238,11 @@
 				F358F0192D2B4E4F00BCC07B /* Settings View.swift in Sources */,
 				F358F0412D2C289F00BCC07B /* Text File Exporter.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F3F241EB2B8DE596009079CB /* Debug */ = {
+		F3F241EB2B8DE596009079CB /* Debug configuration for PBXProject "Clippy Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,7 +306,7 @@
 			};
 			name = Debug;
 		};
-		F3F241EC2B8DE596009079CB /* Release */ = {
+		F3F241EC2B8DE596009079CB /* Release configuration for PBXProject "Clippy Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +362,7 @@
 			};
 			name = Release;
 		};
-		F3F241EE2B8DE596009079CB /* Debug */ = {
+		F3F241EE2B8DE596009079CB /* Debug configuration for PBXNativeTarget "Clippy Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -404,7 +394,7 @@
 			};
 			name = Debug;
 		};
-		F3F241EF2B8DE596009079CB /* Release */ = {
+		F3F241EF2B8DE596009079CB /* Release configuration for PBXNativeTarget "Clippy Board" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -442,19 +432,17 @@
 		F3F241D72B8DE596009079CB /* Build configuration list for PBXProject "Clippy Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3F241EB2B8DE596009079CB /* Debug */,
-				F3F241EC2B8DE596009079CB /* Release */,
+				F3F241EB2B8DE596009079CB /* Debug configuration for PBXProject "Clippy Board" */,
+				F3F241EC2B8DE596009079CB /* Release configuration for PBXProject "Clippy Board" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3F241ED2B8DE596009079CB /* Build configuration list for PBXNativeTarget "Clippy Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3F241EE2B8DE596009079CB /* Debug */,
-				F3F241EF2B8DE596009079CB /* Release */,
+				F3F241EE2B8DE596009079CB /* Debug configuration for PBXNativeTarget "Clippy Board" */,
+				F3F241EF2B8DE596009079CB /* Release configuration for PBXNativeTarget "Clippy Board" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
