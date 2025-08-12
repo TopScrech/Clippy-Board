@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MenuBarPasteboardCard: View {
-    @EnvironmentObject private var settings: SettingsStorage
+    @EnvironmentObject private var store: ValueStore
     @Environment(\.modelContext) private var modelContext
     
     @Bindable private var item: PasteboardItem
@@ -19,7 +19,7 @@ struct MenuBarPasteboardCard: View {
                 .lineLimit(1)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            if settings.showTime {
+            if store.showTime {
                 Text(item.date, style: .time)
                     .footnote()
                     .foregroundStyle(.secondary)

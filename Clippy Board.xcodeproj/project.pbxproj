@@ -12,7 +12,6 @@
 		F358F01D2D2B56B300BCC07B /* Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */; };
 		F358F0412D2C289F00BCC07B /* Text File Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0402D2C289F00BCC07B /* Text File Exporter.swift */; };
 		F39E682E2D2D42260002BA96 /* App Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E682D2D2D42260002BA96 /* App Delegate.swift */; };
-		F3EFC1792D70AAF900EE988A /* Clippy-Board-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EFC1782D70AAF900EE988A /* Clippy-Board-Info.plist */; };
 		F3F241E02B8DE596009079CB /* Clippy Board App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241DF2B8DE596009079CB /* Clippy Board App.swift */; };
 		F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F241E52B8DE596009079CB /* Assets.xcassets */; };
 		F3F241F22B8DE610009079CB /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3F241F12B8DE610009079CB /* ScrechKit */; };
@@ -23,8 +22,9 @@
 		F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */; };
 		F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F241FF2B8DE64D009079CB /* Menu Bar Extra View.swift */; };
 		F3F242112B8DE64D009079CB /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242032B8DE64D009079CB /* App Container.swift */; };
-		F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242042B8DE64D009079CB /* Settings Storage.swift */; };
+		F3F242122B8DE64D009079CB /* ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242042B8DE64D009079CB /* ValueStore.swift */; };
 		F3F242132B8DE64D009079CB /* Text File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F242052B8DE64D009079CB /* Text File.swift */; };
+		F3F557472E4B5961006E1669 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3F557462E4B5961006E1669 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,8 +54,9 @@
 		F3F241FC2B8DE64D009079CB /* Pasteboard Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Item.swift"; sourceTree = "<group>"; };
 		F3F241FF2B8DE64D009079CB /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; };
 		F3F242032B8DE64D009079CB /* App Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
-		F3F242042B8DE64D009079CB /* Settings Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Settings Storage.swift"; sourceTree = "<group>"; };
+		F3F242042B8DE64D009079CB /* ValueStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueStore.swift; sourceTree = "<group>"; };
 		F3F242052B8DE64D009079CB /* Text File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text File.swift"; sourceTree = "<group>"; };
+		F3F557462E4B5961006E1669 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +110,12 @@
 			children = (
 				F3F241DF2B8DE596009079CB /* Clippy Board App.swift */,
 				F39E682D2D2D42260002BA96 /* App Delegate.swift */,
-				F3F242042B8DE64D009079CB /* Settings Storage.swift */,
+				F3F242042B8DE64D009079CB /* ValueStore.swift */,
 				F3F242022B8DE64D009079CB /* Nav */,
 				F3EFC1782D70AAF900EE988A /* Clippy-Board-Info.plist */,
 				F3F241EA2B8DE596009079CB /* Clippy Board.entitlements */,
 				F3F241E52B8DE596009079CB /* Assets.xcassets */,
+				F3F557462E4B5961006E1669 /* Localizable.xcstrings */,
 				F3F241F92B8DE64D009079CB /* Pasteboard List.swift */,
 				F3F241F72B8DE64D009079CB /* Pasteboard VM.swift */,
 				F358F01C2D2B56B300BCC07B /* Pasteboard Card.swift */,
@@ -181,7 +183,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					F3F241DB2B8DE596009079CB = {
 						CreatedOnToolsVersion = 15.2;
@@ -194,6 +196,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				nl,
 			);
 			mainGroup = F3F241D32B8DE596009079CB;
 			packageReferences = (
@@ -214,7 +218,7 @@
 		F3F241DA2B8DE596009079CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F3EFC1792D70AAF900EE988A /* Clippy-Board-Info.plist in Resources */,
+				F3F557472E4B5961006E1669 /* Localizable.xcstrings in Resources */,
 				F3F241E62B8DE596009079CB /* Assets.xcassets in Resources */,
 			);
 		};
@@ -226,7 +230,7 @@
 			files = (
 				F3F242112B8DE64D009079CB /* App Container.swift in Sources */,
 				F3F2420E2B8DE64D009079CB /* Menu Bar Extra View.swift in Sources */,
-				F3F242122B8DE64D009079CB /* Settings Storage.swift in Sources */,
+				F3F242122B8DE64D009079CB /* ValueStore.swift in Sources */,
 				F358F01D2D2B56B300BCC07B /* Pasteboard Card.swift in Sources */,
 				F3F242072B8DE64D009079CB /* Pasteboard VM.swift in Sources */,
 				F3F2420C2B8DE64D009079CB /* Pasteboard Item.swift in Sources */,
@@ -278,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -301,7 +306,9 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -342,6 +349,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -358,7 +366,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -373,9 +383,11 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Clippy Board/Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";
@@ -405,9 +417,11 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Clippy Board/Clippy-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Clippy Board";

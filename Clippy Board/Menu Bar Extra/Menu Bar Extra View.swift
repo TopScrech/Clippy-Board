@@ -2,18 +2,18 @@ import ScrechKit
 import SwiftData
 
 struct MenuBarExtraView: View {
-    @EnvironmentObject private var settings: SettingsStorage
+    @EnvironmentObject private var store: ValueStore
     @Environment(PasteboardVM.self) private var pasteboardObserver
+    
+    @Query private var items: [PasteboardItem]
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
-    
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [PasteboardItem]
     
     @State private var document = TextFile()
     @State private var search = ""
     
-    var founditems: [PasteboardItem] {
+    private var founditems: [PasteboardItem] {
         if search.isEmpty {
             items
         } else {
@@ -46,9 +46,9 @@ struct MenuBarExtraView: View {
             //                }
             //            }
             
-            Toggle("Show time", isOn: $settings.showTime)
+            Toggle("Show time", isOn: $store.showTime)
             
-            Picker("Detection speed", selection: $settings.detectionSpeed) {
+            Picker("Detection speed", selection: $store.detectionSpeed) {
                 Text("Slow")
                     .tag(5)
                 
@@ -64,7 +64,7 @@ struct MenuBarExtraView: View {
                 Button("Clear All") {
                     clearAll()
                 }
-                                
+                
                 Button("Quit", role: .destructive) {
                     NSApplication.shared.terminate(nil)
                 }
@@ -93,5 +93,5 @@ struct MenuBarExtraView: View {
 #Preview {
     MenuBarExtraView()
         .environment(PasteboardVM())
-        .environmentObject(SettingsStorage())
+        .environmentObject(ValueStore())
 }

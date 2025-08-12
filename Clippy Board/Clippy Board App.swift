@@ -6,7 +6,7 @@ struct MyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @State private var vm = PasteboardVM()
-    @StateObject private var settings = SettingsStorage()
+    @StateObject private var store = ValueStore()
     
     private let container: ModelContainer
     
@@ -25,7 +25,7 @@ struct MyApp: App {
             MenuBarExtraView()
                 .environment(vm)
                 .modelContainer(container)
-                .environmentObject(settings)
+                .environmentObject(store)
         }
         .menuBarExtraStyle(.window)
         
@@ -33,7 +33,7 @@ struct MyApp: App {
             PasteboardList()
                 .environment(vm)
                 .modelContainer(container)
-                .environmentObject(settings)
+                .environmentObject(store)
         }
         
         Settings {
