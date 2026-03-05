@@ -27,11 +27,9 @@ struct MenuBarPasteboardCard: View {
         }
         .buttonStyle(.accessoryBar)
         .contextMenu {
-            Button {
+            Button("Copy", systemImage: "doc.on.doc") {
                 NSPasteboard.general.clearContents()
                 NSPasteboard.general.setString(item.content, forType: .string)
-            } label: {
-                Label("Copy", systemImage: "doc.on.doc")
             }
             
             ShareLink(item: item.content) {
