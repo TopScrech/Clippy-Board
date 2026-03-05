@@ -39,10 +39,8 @@ struct MenuBarPasteboardCard: View {
             }
             
             Section {
-                Button(role: .destructive) {
+                Button("Remove", systemImage: "trash", role: .destructive) {
                     modelContext.delete(item)
-                } label: {
-                    Label("Remove", systemImage: "trash")
                 }
             }
         }

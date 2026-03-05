@@ -3,17 +3,15 @@ import ScrechKit
 @Observable
 final class TextFileExporter {
     func exportToFile(_ array: [String]) {
-        main {
 #warning("Crashes")
-            let panel = NSSavePanel()
-            
-            panel.allowedContentTypes = [.text]
-            panel.nameFieldStringValue = "ExportedFile.txt"
-            panel.directoryURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
-            
-            if panel.runModal() == .OK {
-                self.writeToFile(array, url: panel.url)
-            }
+        let panel = NSSavePanel()
+        
+        panel.allowedContentTypes = [.text]
+        panel.nameFieldStringValue = "ExportedFile.txt"
+        panel.directoryURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
+        
+        if panel.runModal() == .OK {
+            self.writeToFile(array, url: panel.url)
         }
     }
     

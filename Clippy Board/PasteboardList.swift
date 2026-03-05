@@ -11,24 +11,17 @@ struct PasteboardList: View {
         List {
             Section {
                 HStack {
-                    Button("Clear All") {
-                        clearAll()
-                    }
-                    
-                    Button("Print All") {
-                        printAll()
-                    }
+                    Button("Clear All", action: clearAll)
+                    Button("Print All", action: printAll)
                 }
             }
             
-            ForEach(items) { item in
-                PasteboardCard(item)
+            ForEach(items) {
+                PasteboardCard($0)
             }
         }
         .onChange(of: vm.clipboardContent) { _, newValue in
-            guard let newValue else {
-                return
-            }
+            guard let newValue else { return }
             
             guard let sameItem = items.first(where: {
                 $0.content == newValue.content

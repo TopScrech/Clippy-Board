@@ -33,8 +33,8 @@ struct MenuBarExtraView: View {
                 if founditems.isEmpty {
                     ContentUnavailableView.search(text: search)
                 } else {
-                    ForEach(founditems.reversed()) { item in
-                        MenuBarPasteboardCard(item)
+                    ForEach(founditems.reversed()) {
+                        MenuBarPasteboardCard($0)
                     }
                 }
             }
@@ -61,9 +61,7 @@ struct MenuBarExtraView: View {
             .padding(.horizontal)
             
             HStack {
-                Button("Clear All") {
-                    clearAll()
-                }
+                Button("Clear All", action: clearAll)
                 
                 Button("Quit", role: .destructive) {
                     NSApplication.shared.terminate(nil)
